@@ -11,7 +11,7 @@ st.sidebar.markdown('<h1 style="text-align:center; color:#D3D3D3;">Sentiment Ana
 st.sidebar.markdown('Enter a review to classify as positive or negative.')
 user_input = st.sidebar.text_input('Review')
 
-model2 = AutoModelForSequenceClassification.from_pretrained("model_batch_20")
+model2 = AutoModelForSequenceClassification.from_pretrained("sohan-ai/test")
 if model2:
     print("Model")
 else:
@@ -19,7 +19,6 @@ else:
 
 model_name = "distilbert-base-uncased"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForSequenceClassification.from_pretrained(model_name)
 
 labels = ["negative", "positive"]
 
