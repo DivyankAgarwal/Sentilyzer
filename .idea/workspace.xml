@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d8f3124-f404-4521-a897-10157f44d40b" name="Changes" comment="">
+    <list default="true" id="1d8f3124-f404-4521-a897-10157f44d40b" name="Changes" comment="change requirements file">
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamlit-main.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamlit-main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +52,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681762172986</updated>
-      <workItem from="1681762174402" duration="2600000" />
+      <workItem from="1681762174402" duration="2783000" />
     </task>
+    <task id="LOCAL-00001" summary="change requirements file">
+      <created>1681764814830</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681764814830</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -68,6 +77,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="change requirements file" />
+    <option name="LAST_COMMIT_MESSAGE" value="change requirements file" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

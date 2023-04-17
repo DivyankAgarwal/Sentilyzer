@@ -1,10 +1,8 @@
 import streamlit as st
 import torch
-import torchtext
-from PIL import Image
-from transformers import AutoTokenizer, DistilBertTokenizer, DistilBertForSequenceClassification, AutoModelForSequenceClassification
 import torch.nn.functional as F
-
+from PIL import Image
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 # I have mixed feelings, not bad or not good.
 
@@ -22,8 +20,6 @@ else:
 model_name = "distilbert-base-uncased"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSequenceClassification.from_pretrained(model_name)
-
-
 
 labels = ["negative", "positive"]
 
