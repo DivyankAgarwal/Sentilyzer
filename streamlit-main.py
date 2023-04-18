@@ -6,6 +6,14 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 # I have mixed feelings, not bad or not good.
 
+@st.cache_resource
+def load_model():
+    return AutoModelForSequenceClassification.from_pretrained("sohan-ai/test")
+
+@st.cache_resource
+def load_tokenizer():
+    return AutoTokenizer.from_pretrained("distilbert-base-uncased")
+
 st.set_page_config(page_title='Sentiment Analysis', page_icon=':smiley:', layout='wide')
 st.sidebar.markdown('<h1 style="text-align:center; color:#D3D3D3;">Sentiment Analysis</h1>', unsafe_allow_html=True)
 st.sidebar.markdown('Enter a review to classify as positive or negative.')
@@ -17,8 +25,9 @@ if model2:
 else:
     print("NO")
 
-model_name = "distilbert-base-uncased"
-tokenizer = AutoTokenizer.from_pretrained(model_name)
+model2 = load_model()
+
+tokenizer = load_tokenizer()
 
 labels = ["negative", "positive"]
 

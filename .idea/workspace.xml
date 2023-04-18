@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d8f3124-f404-4521-a897-10157f44d40b" name="Changes" comment="change requirements file">
+    <list default="true" id="1d8f3124-f404-4521-a897-10157f44d40b" name="Changes" comment="change model url">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamlit-main.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamlit-main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681762172986</updated>
-      <workItem from="1681762174402" duration="5561000" />
+      <workItem from="1681762174402" duration="7518000" />
     </task>
     <task id="LOCAL-00001" summary="change requirements file">
       <created>1681764814830</created>
@@ -67,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681764982995</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="change model url">
+      <created>1681768482932</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681768482932</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,7 +94,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change requirements file" />
-    <option name="LAST_COMMIT_MESSAGE" value="change requirements file" />
+    <MESSAGE value="change model url" />
+    <option name="LAST_COMMIT_MESSAGE" value="change model url" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
