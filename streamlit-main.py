@@ -14,12 +14,26 @@ def load_model():
 def load_tokenizer():
     return AutoTokenizer.from_pretrained("distilbert-base-uncased")
 
+
+
 st.set_page_config(page_title='Sentiment Analysis',
                    page_icon=':smiley:',
                    layout='centered')
 
+
+
+
+
+# hide_default_format = """
+#        <style>
+#        #MainMenu {visibility: hidden; }
+#        footer {visibility: hidden;}
+#        </style>
+#        """
+# st.markdown(hide_default_format, unsafe_allow_html=True)
+
 st.sidebar.markdown('<h1 style="text-align:center; color:#D3D3D3;">Sentiment Analysis</h1>', unsafe_allow_html=True)
-st.sidebar.markdown('Enter a review to classify as positive or negative.')
+st.sidebar.markdown('<h4 style="text-align:center; color:white;">Enter a review to classify as positive or negative.</h4>', unsafe_allow_html=True)
 user_input = st.sidebar.text_input('Review')
 
 model2 = AutoModelForSequenceClassification.from_pretrained("sohan-ai/sentiment-analysis-model-amazon-reviews")
@@ -34,8 +48,8 @@ tokenizer = load_tokenizer()
 
 labels = ["negative", "positive"]
 
-st.write("<h1 style='text-align:center; color:#D3D3D3;'>Sentilyzer</h1>", unsafe_allow_html=True)
-st.write("<h3 style='text-align:center; color:#D3D3D3;'>Sentiment Analysis Application</h3>", unsafe_allow_html=True)
+st.write("<h1 style='text-align:center; color:white;'>Sentilyzer</h1>", unsafe_allow_html=True)
+st.write("<h3 style='text-align:center; color:white;'>Sentiment Analysis Application</h3>", unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns([1, 3, 1])
 with col1:
