@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d8f3124-f404-4521-a897-10157f44d40b" name="Changes" comment="change model url">
+    <list default="true" id="1d8f3124-f404-4521-a897-10157f44d40b" name="Changes" comment="add caching">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/streamlit-main.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamlit-main.py" afterDir="false" />
     </list>
@@ -52,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681762172986</updated>
-      <workItem from="1681762174402" duration="7518000" />
+      <workItem from="1681762174402" duration="9449000" />
     </task>
     <task id="LOCAL-00001" summary="change requirements file">
       <created>1681764814830</created>
@@ -75,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681768482932</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add caching">
+      <created>1681793684632</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681793684632</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,7 +102,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change requirements file" />
     <MESSAGE value="change model url" />
-    <option name="LAST_COMMIT_MESSAGE" value="change model url" />
+    <MESSAGE value="add caching" />
+    <option name="LAST_COMMIT_MESSAGE" value="add caching" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

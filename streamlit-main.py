@@ -14,12 +14,15 @@ def load_model():
 def load_tokenizer():
     return AutoTokenizer.from_pretrained("distilbert-base-uncased")
 
-st.set_page_config(page_title='Sentiment Analysis', page_icon=':smiley:', layout='wide')
+st.set_page_config(page_title='Sentiment Analysis',
+                   page_icon=':smiley:',
+                   layout='centered')
+
 st.sidebar.markdown('<h1 style="text-align:center; color:#D3D3D3;">Sentiment Analysis</h1>', unsafe_allow_html=True)
 st.sidebar.markdown('Enter a review to classify as positive or negative.')
 user_input = st.sidebar.text_input('Review')
 
-model2 = AutoModelForSequenceClassification.from_pretrained("sohan-ai/test")
+model2 = AutoModelForSequenceClassification.from_pretrained("sohan-ai/sentiment-analysis-model-amazon-reviews")
 if model2:
     print("Model")
 else:
@@ -40,7 +43,6 @@ with col1:
 
 with col2:
     if user_input:
-        print(user_input)
 
         tokens = tokenizer(user_input)
         inputs = torch.tensor(tokens["input_ids"]).unsqueeze(0)
@@ -50,7 +52,6 @@ with col2:
 
         predicted_label = torch.argmax(logits, dim=1)
 
-        print("Predicted label: ", predicted_label)
 
         if predicted_label.numel() == 1:
             probs = F.softmax(logits, dim=1)
